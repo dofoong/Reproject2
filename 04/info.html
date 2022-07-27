@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoft</title>
+    <link rel="stylesheet" href="./info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&amp;display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="info_header">
+        <div class="info_text">
+            <p>정보마당</p>
+        </div>
+    </div>
+    
+    <div class="info_main">
+        <div class="info_title">
+            <p>REsoft소식</p>
+            <p>NEWS</p>
+        </div>
+            
+        <div id="info_article_list">
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            <div class="info_article">
+                <figure>
+                    <img class="info_img" src="./img/36.png" alt="">
+                </figure>
+                <p class="info_article_text">Lorem ipsum dolor sit amet, consetetur sadipscing...</p>
+                <p class="info_date">2022.01.01</p>
+            </div>
+            
+            <button class="info_btn" onclick="more()">
+                더보기
+            </button>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $('#info_article_list>div').hide(); //div 모두 숨기고
+        $('#info_article_list>div').slice(0,6).show(); //1번째부터 6번째 까지만 보여줌
+    })
+    
+    function more(){
+        $('#info_article_list>div').slice(6,10).show();
+        //more함수는 7번째부터 10번째 까지 보여줌(마지막 4개)
+    }
+</script>
+   
+        
+</body>
+</html>
