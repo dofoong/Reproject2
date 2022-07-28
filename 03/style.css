@@ -35,7 +35,6 @@ p {
     padding-left: 0px;
     margin-left: 0px;
 }
-
 .span {
     display: block;
     width: 148px;
@@ -62,20 +61,33 @@ p {
     color: #1E1E1E;
     opacity: 1;
 }
-#container {
-    background: 0% 0% no-repeat padding-box;
-    background-image: url(./img/Ecoce_back.png);
+.back {
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
 }
-.article {
-    padding-top: 676px;
-    padding-left: 469px;
+
+.front {
+    background: transparent 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 #ecoce {
-    background: transparent url(./img/Ecoce.png) 0% 0% no-repeat padding-box;
     opacity: 1;
     width: 452px;
     height: 125px;
-    padding-left: 1228px;
-    padding-top: 846px;
+}
+.eco {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: right;
+    font: normal normal bold 22px/32px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+    width: 178px;
+    height: 32px;
+}
+
+.project_t {
+    padding-left: 240px;
+    padding-top: 100px;
 }
