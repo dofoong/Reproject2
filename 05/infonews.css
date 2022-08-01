@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     vertical-align: baseline;
 }
 
@@ -11,8 +11,6 @@
     margin: 80px auto;
     width: 1920px;
     height: 300px;
-    /* background: #1E1E1E 0% 0% no-repeat padding-box; */
-    /* opacity: 0.3; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../04/img/64.png");
     position: relative;
 }
@@ -51,4 +49,112 @@
     letter-spacing: 0px;
     color: #C8C8C8;
     opacity: 1;
+}
+
+/********** 목록으로 **********/
+.infonews_turn {
+    width: 123px;
+    height: 42px;
+    opacity: 1;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.infonews_turn_icon {
+    width: 42px;
+    height: 42px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.infonews_turn_text {
+    text-align: left;
+    font: normal normal medium 16px/24px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #1E1E1E;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+/********** headline **********/
+.infonews_list {
+    width: 1060px;
+    margin-top: 147px;
+    margin-left: 100px;
+}
+
+.infonews_headline p:first-child {
+    text-align: left;
+    font: normal normal bold 24px/35px Noto Sans KR;
+    letter-spacing: 1.2px;
+    color: #1E1E1E;
+    opacity: 1;
+    margin-bottom: 12px;
+}
+
+.infonews_headline p:last-child {
+    text-align: left;
+    font: normal normal 300 16px/24px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #AAAAAA;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.infonews_contents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 3px solid #184B9F;
+    border-bottom: 3px solid #184B9F;
+}
+
+.infonews_con_img {
+    width: 1060px;
+    height: 561px;
+    margin-bottom: 50px;
+}
+
+.infonews_con_text {
+    text-align: left;
+    font: normal normal normal 16px/20px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #000000;
+    opacity: 1;
+}
+
+/********** 이전글, 다음글 **********/
+.infonews_btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infonews_btn_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infonews_btn_icon {
+    width: 42px;
+    height: 42px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #1E1E1E;
+    opacity: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infonews_btn_text {
+    text-align: left;
+    font: normal normal medium 16px/24px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #1E1E1E;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
