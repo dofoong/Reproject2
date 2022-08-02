@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/introduce.css">
     
     <title>회사소개</title>
-    
+    <style>
+     /* div{background-color: darkgray;} */
+    </style>
 </head>
 <body>
     <div id="header">
@@ -53,14 +55,14 @@
             <p>연혁</p>
             <p>HISTORY</p>
         </div> 
-        
         <div id="history-wrap">
         <div><p>2022</p>
+          <hr>
             <p>2021</p></div>
         <div id="history-index">
             <ul class="timeline">
               <li class="event" data-date="1">
-              </li>
+              </li>  
               <li class="event" data-date="12">            
                 <p>대구여성인력개발센터 MOU 협약 (여성IT인재 현장실습)</p>
                 <p>대구가톨릭대학교 계약학과 MOU 협약 (ICTAI융합학과)</p>
@@ -91,13 +93,20 @@
     </section>
     <!-- 조직도 -->
     <section>
-      <div class="section">
+      <!-- <div class="section">
         <div class="intro-title">
           <p>조직도</p>
           <p>ORGANIZATION</p>
         </div>
         <div id="organiz"><img></div>
-    </div>
+    </div> -->
+    <details class="section" open>
+      <summary class="intro-title">
+        <p>조직도</p>
+        <p>ORGANIZATION</p>
+      </summary>
+      <div id="organiz"></div>
+    </details>
     </section>
     <!-- 특허인증 -->
     <section>
@@ -144,21 +153,58 @@
         
 <!-- 오시는길 -->
     <section>
-        <div class="section">
-    <div class="intro-title">
-    <p>오시는 길</p>
-    <p>DIRECTIONS</p>
-    </div>
-    <div id="map">지도공간</div>
-    <div>
-        <p>연락처</p>
-        <p>주소</p>
-    </div>
+    <div class="section">
+      <div class="intro-title">
+      <p>오시는 길</p>
+      <p>DIRECTIONS</p>
+      </div>
+      <div id="map-wrap">
+        <div id="map">지도공간</div>
+        <div id="map-info-wrap">
+           <div class="map-info">
+                <p>연락처</p>
+                <p>TELL. (053) 475-2110 FAX. (0504) 257-5966 E-MAIL. call@resoft.kr</p>
+           </div>
+           <div class="map-info">
+                <p>주소</p>
+                <p>(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (주)리소프트</p>
+           </div>
+       </div>
+      </div>
     </div>
 </div>
     </section>
-    <footer>
+    <footer id="footer">
+      <div class="footer-wrap">
+          <div class="footer-logo">
+              <img src="./img/resoft.png" alt="">
+          </div>
 
-    </footer>
+          <div class="address">
+              <p class="footer-add">© RESOFT CO.LTD. All Rights Reserved.</p>  
+              <p class="footer-inform">
+                  <span>상호 : (주)리소프트</span>
+                  <br>
+                  <span>사업자등록번호 : 722-81-02219</span>
+                  <br>
+                  <span>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</span>
+              </p>
+              <p class="footer-inform-add">
+                  <span>대표이사 : 오유나</span>&nbsp;&nbsp;
+                  <span>개인정보책임자 : 이현지</span>
+                  <br/>
+                  <span>전화 : (053) 475-2110</span>&nbsp;&nbsp;&nbsp; 
+                  <span>팩스 : (0504) 257-5966</span>&nbsp;&nbsp;&nbsp;
+                  <span>이메일 : call@resoft.kr</span>
+              </p>
+          </div>
+      </div>
+  </footer>
+  <script type="text/javascript" 
+  src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ac540a5e75f65b1bdd006f2e7c030b96"></script> 
+
+  
+   <!-- map.js 적용 -->
+<script src="./js/map.js"></script> 
 </body>
 </html>
