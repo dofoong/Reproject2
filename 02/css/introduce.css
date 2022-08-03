@@ -304,8 +304,8 @@ section{
 }
 .map-info{
   border-bottom:2px solid #DBDBDB;
-  width:90%;
-  gap:100px;
+  width:85%;
+  max-width:1400px;
 }
 .map-info:last-of-type{
   border-bottom: 3px solid black;
