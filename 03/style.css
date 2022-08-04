@@ -47,11 +47,12 @@ p {
 .bold-r {
     font-weight: 700;
     font-size: 30px;
-    text-align: right;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
     width: 317px;
     height: 88px;
+    left: 1124px;
+    top: 138px;
     font: normal normal bold 30px/44px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
@@ -133,5 +134,11 @@ p {
     color: #C8C8C8;
     font: normal normal medium 18px/26px Noto Sans KR;
     letter-spacing: 0px;
+    opacity: 1;
+}
+
+#moadopage {
+    background: transparent 
+    linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
 }
