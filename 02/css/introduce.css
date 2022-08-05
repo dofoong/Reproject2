@@ -13,54 +13,58 @@
     --unnamed-character-spacing-0: 0px;
     --unnamed-line-spacing-44: 44px;
     --unnamed-line-spacing-72: 72px;
-    }
-    
-    /* Character Styles */
-    .unnamed-character-style-1 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-50);
-    line-height: var(--unnamed-line-spacing-72);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-aeaeae);
-    }
-    .unnamed-character-style-2 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-50);
-    line-height: var(--unnamed-line-spacing-72);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-000000);
-    }
-    .unnamed-character-style-3 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-30);
-    line-height: var(--unnamed-line-spacing-44);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-000000);
-    }
-    .unnamed-character-style-4 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-30);
-    line-height: var(--unnamed-line-spacing-44);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-000000);
-    }
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+font-family: var(--unnamed-font-family-noto-sans-kr);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-50);
+line-height: var(--unnamed-line-spacing-72);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-aeaeae);
+}
+.unnamed-character-style-2 {
+font-family: var(--unnamed-font-family-noto-sans-kr);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-50);
+line-height: var(--unnamed-line-spacing-72);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+}
+.unnamed-character-style-3 {
+font-family: var(--unnamed-font-family-noto-sans-kr);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-30);
+line-height: var(--unnamed-line-spacing-44);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+}
+.unnamed-character-style-4 {
+font-family: var(--unnamed-font-family-noto-sans-kr);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-30);
+line-height: var(--unnamed-line-spacing-44);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+}
+
 body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    overflow-x:hidden;
-    position:relative;
-    display: block;
-    font-family: 'Noto Sans KR', sans-serif;   
+  margin:0;
+  padding:0;
+  font-family: 'Noto Sans KR', sans-serif; 
+  max-width:1920px;
+}
+#container{
+  width:100%;
+  align-items: center;
+  overflow-x: hidden;
+  position:relative;
+  display: block;
 }
 ul li{
     list-style: none;
@@ -79,45 +83,34 @@ summary::-webkit-details-marker {
 summary::-moz-list-bullet {
  list-style-type: none;
 }
-/* div{
-    background-color: blueviolet; 
-     border: 1px solid red;
-}*/
-
 section:nth-of-type(even){
     background: rgba(249, 249, 249, 1) 0% 0% no-repeat padding-box;
 }
 section{
-    padding: 100px 0 0 240px;
+    padding: 100px 0 0 7%;
     margin-bottom: 50px;  
 }
+.section{
+  width:90%;
+}
 #header{ 
-    width:100%; 
-    height: 300px; 
-    top:80px; 
-    left:0px;
-    background: rgba(30, 30, 30, 1) 0% 0% no-repeat padding-box;
-    /* opacity: 0.3; */
-    background-image: url(../img/square64.png);
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center; 
+  position:relative;
+  height: 30vh; 
+  background: rgba(30, 30, 30, 0.3) 0% 0% no-repeat;
+  background-image: url('../img/square64.png') ;
+  background-size:cover;
+  background-position: center;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items: center; 
 }
 
 #header p{
-    position: inherit;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     text-align: center;
     font: normal normal bold 40px/58px Noto Sans KR;
     letter-spacing: 0px;
     color: rgba(255, 255, 255, 1);
-    top: 201px;
-    left: 886px;
-    /* width: 148px; */
-    height: 58px;
-    
 }
 .intro-title{
     width: 211px;
@@ -126,8 +119,6 @@ section{
 }
 .intro-title p:first-child{
     height: 58px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     text-align: left;
     font: normal normal bold 40px/58px Noto Sans KR;
     letter-spacing: 0px;
@@ -138,16 +129,14 @@ section{
 .intro-title p:last-child{
     width: 89px;
     height: 26px;
-    font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     text-align: left;
     font: normal normal medium 18px/26px Noto Sans KR;
     letter-spacing: 0px;
     color: rgba(200, 200, 200, 1);
 }
-/* #intro-info-wrap{
-    
-} */
+#intro-info-wrap{
+  position:relative;
+}
 .intro-info:first-child{
     border-top: 1px solid rgba(219, 219, 219, 1);
     margin-top: 50px;
@@ -155,35 +144,37 @@ section{
 }
 .intro-info{ 
     border-bottom: 1px solid rgba(219, 219, 219, 1);
-    display:flex;
     position:relative;
+    display:flex;
+    height:100px;
+}
+.intro-info p{
+  padding:0 50px 0 40px;
+  align-items: center;  
 }
 .intro-info p:first-child{
-    /* width:69px; */
+    position: absolute;
+    left:0;
     height: 35px;
     font: normal normal bold 24px/50px Noto Sans KR;
     letter-spacing: 1.2px;
     color: rgba(30, 30, 30, 1);
 }
 .intro-info p:last-child{
-    position:absolute;
-    left: 280px;
+    position: absolute;
+    left: 20%;
+    transform:  translateY(50%);
     height:29px;
     font: normal normal normal 20px/30px Noto Sans KR;
     letter-spacing: 0px;
     color: rgba(149, 149, 149, 1);
 }
-.intro-info p{
-    padding:0 50px 0 40px;
-}
 /* 연혁 */
 #history-resoft {
-    width:60%;
+    width:90%;
   }
   #history-wrap{
     position:relative;
-    top:50%;
-    left:40%;
   }
   #history-wrap hr{
     width:100%;
@@ -194,6 +185,7 @@ section{
    }
   #history-wrap > div:first-of-type{
     padding-top: 50px;
+    padding-left:10%;
   }
   #history-wrap > div > p{
     font-weight: bold;
@@ -201,9 +193,9 @@ section{
     margin-top:35px;
   }
   #history-index{
+    position:relative;
     top: -230px;
     left: 20%;
-    position:relative;
   }
   /* Timeline */
   .timeline {
@@ -211,18 +203,18 @@ section{
     border-left: 4px solid rgba(0, 0, 0, 0.3);
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    background: rgba(255, 255, 255, 0.03);
+    
     color: black;
     margin: 50px auto;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
     font-size: 1.03em;
-    padding: 50px;
+    padding: 50px 0 0 50px;
     list-style: none;
     text-align: left;
     font-weight: 100;
-    max-width: 70%;
+    max-width: 61%;
   }
   
   .timeline .event {
@@ -269,29 +261,28 @@ section{
   margin-top: 50px;
  }
  /*특허*/
- #certifi-table{
-  margin-top:50px;
- }
- #certifi-table table{
-  display: flex;
+ .grid-image {
+  display:flex;
+  flex-wrap:wrap;
   justify-content: center;
- }
- #certifi-table table tr td img{
-  margin: 0 160px 90px 0;
- }
- #certifi2x3{
-  visibility:collapse;
- }
+  margin:50px 0;
+}
+.grid-image img {
+  width:calc(33.333% - 90px);
+  margin:0 90px 50px 0;
+}
+.grid-image img:nth-of-type(3n){
+  margin-right:0;
+}
+
  /*오시는 길*/
  #map-wrap{
-  margin:0;
-  padding:0;
-  width:100%;
+  margin:0 auto;
+  width:90%;
   margin-top: 50px;
  }
  #map{
-  width: 90%;
-  height:30vw;
+  height:70vh;
   max-width:1400px;
   position: relative;
   overflow: hidden;
@@ -299,30 +290,125 @@ section{
   background-size: cover;
   background-repeat: no-repeat;
 }
-#map-info-wrap{
-
-}
 .map-info{
   border-bottom:2px solid #DBDBDB;
-  width:85%;
-  max-width:1400px;
+  display:flex;
+  position:relative;
+  height:10vh;
 }
 .map-info:last-of-type{
   border-bottom: 3px solid black;
 }
 .map-info p{
-  display: inline-block;
-  margin:25px 0 25px 0;
+  margin:25px 0;
 }
 .map-info p:first-child{
-  width: 20%;
-  margin-left:5%;
-  text-align: center;
-  font-size: 24px;
+  position: absolute;
+  top:0;
+  left:0;
+  margin-left: 3%;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #1E1E1E;
 }
 .map-info p:last-child{
-  font-size: 20px;
-  color: #959595;
+  position: absolute;
+  top:0;
+  left:200px;
+  font-size: 1.2rem;
+  color: #959595; 
+}
+/* 1280px tablet */
+@media screen and (max-width:1280px) {
+  #container{
+    max-width:1280px;
+  }
+  section{
+    padding:50px 0 0 5%;
+    margin-bottom:50px;
+  }
+  /* 소개 */
+  .intro-info p:last-child{
+    position:absolute;
+    left: 200px;
+    height:25px;
+    }
+  /* 연혁 */
+  #history-index{
+    left:28%;
+  }
+  #history-wrap > div:first-of-type{
+    padding-top: 50px;
+    padding-left:5%;
+  }
+  /* 조직도 */
+  #organiz{
+    background:url(../img/org1280.svg) no-repeat center/60%;
+    height: 1156px;
+  }
+  /* 오시는 길 */
+  .map-info p:last-child{
+    font-size: 1rem;
+    color: #959595; 
+    left:150px;
+  }
+ }
+ /* 768px Moblie */
+ @media screen and (max-width:768px){
+  #container{
+    max-width:768px;
+  }
+  section{
+    padding:50px 0 0 3%;
+  }
+  /* 소개 */
+  .intro-info p:first-child{
+    height: 30px;
+    letter-spacing: 1.1px;
+  }
+.intro-info p:last-child{
+  position:absolute;
+  left: 150px;
+  height:25px;
+  }
+  /* 연혁 */
+  #history-index{
+    left:30%;
+  }
+  #history-wrap > div:first-of-type{
+    padding-top: 50px;
+    padding-left:3%;
+  }
+  /* 조직도 */
+  #organiz{
+    background-size: 100%;
+  }
+  /* 특허인증 */
+  .grid-image img {
+    width:calc(50% - 9vw);
+  }
+  .grid-image img:nth-of-type(3n) {
+    margin-right:90px;
+  }
+
+  .grid-image img:nth-of-type(2n) {
+    margin-right:0;
+  }
+  .grid-image img:last-child{
+  display:none;
+  }
+  /* 오시는 길 */
+  .map-info p:first-child{
+    margin-left: 1%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1E1E1E;
+    
+  }
+  .map-info p:last-child{
+    font-size: 0.8rem;
+    color: #959595; 
+    left:100px;
+    transform: translateY(-30%);
+  }
 }
