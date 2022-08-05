@@ -180,10 +180,10 @@ figure {
     .info_main {
         max-width: 1000px;
     }
+    #info_article_list {
+        max-width: 600px;
+    }
     .info_article:nth-child(even) {
         margin-left: 0;
-    }
-    .info_article p {
-        margin-left: 160px;
     }
 }
