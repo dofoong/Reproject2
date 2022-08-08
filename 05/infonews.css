@@ -63,6 +63,7 @@
 
 .infonews_turn a {
     text-decoration: none;
+    display: flex;
 }
 
 .infonews_turn_icon {
@@ -80,7 +81,7 @@
     opacity: 1;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 18px;
 }
 
 .infonews_turn img:last-child {display: none;}
@@ -149,6 +150,11 @@
     justify-content: space-between;
 }
 
+.infonews_btn_box a {
+    text-decoration: none;
+    display: flex;
+}
+
 .infonews_btn_icon {
     width: 42px;
     height: 42px;
@@ -190,4 +196,44 @@
 
 .infonews_btn_box:hover .infonews_btn_text {
     color: #184B9F;
+}
+
+/********** 태블릿 화면 **********/
+@media screen and (max-width: 1280px) {
+    * {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .info_header {
+        width: 1280px;
+        height: 300px;
+    }
+    .info_main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .infonews_turn_icon {
+        margin-top: 8px;
+    }
+    .infonews_list {
+        max-width: 700px;
+    }
+    .infonews_con_img {
+        width: 700px;
+        height: 370px;
+    }
+    .infonews_btn_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .infonews_btn_icon:first-child {
+        margin-right: 320px;
+    }
+    .infonews_btn_icon:last-child {
+        margin-left: 320px;
+    }
+    .infonews_btn_text {
+        display: none;
+    }
 }
