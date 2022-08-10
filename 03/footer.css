@@ -1,0 +1,22 @@
+footer{
+    background-color: #E9E9E9;
+}
+#footer{
+    margin-left: 240px;
+    padding:50px 0 50px 0;
+}
+.footer-logo p{
+    display:inline-block;
+    margin-left: 20px;
+    color: #9E9E9E;
+    font-weight: bold;
+}
+.footer-wrap{
+    display:flex;
+    font-size: 16px;
+    line-height: 26px;
+    color: #9E9E9E;
+}
+.footer-wrap p{
+    width:50%;
+}
