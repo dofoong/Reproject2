@@ -199,7 +199,6 @@ section{
   margin:5vh 0;
 }
 .grid-image img {
-  /* width:calc(33.333% - 90px); */
   width:25.333%;
   margin: 0 8% 4.5% 0;
 }
@@ -228,19 +227,15 @@ section{
   border-bottom:2px solid #DBDBDB;
   display:flex;
   position:relative;
-  padding:2.5vh;
 }
 .map-info:last-of-type{
   border-bottom: 3px solid black;
 }
-.map-info p{
-  margin:25px 0;
-}
+
 .map-info p:first-child{
-  position: absolute;
   top:0;
   margin-left: 3%;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   color: #1E1E1E;
 }
@@ -248,7 +243,7 @@ section{
   position: absolute;
   top:0;
   left:18%;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: #959595; 
 }
 /* 1280px tablet */
@@ -276,12 +271,6 @@ section{
     background:url(../img/org1280.svg) no-repeat center/60%;
     padding: 60vw 0 30vw 0;
   }
-  /* 오시는 길 */
-  .map-info p:last-child{
-    font-size: 1rem;
-    color: #959595; 
-    left:23%;
-  }
  }
 /*소개 상세정보 1107px*/
 @media screen and (max-width:1107px){
@@ -289,7 +278,6 @@ section{
     transform: translateY(30%);
     } 
 }
-
  /* 768px Moblie */
  @media screen and (max-width:768px){
   /* 소개 */
@@ -329,17 +317,11 @@ section{
   display:none;
   }
   /* 오시는 길 */
-  .map-info{
-    padding:2vh;
-  }
   .map-info p:first-child{
     margin-left: 1%;
-    font-size: 1rem;
     left:3%;
   }
   .map-info p:last-child{
-    font-size: 0.8rem;
     left:17%;
-    transform: translateY(-30%);
   }
 }
