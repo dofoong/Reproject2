@@ -49,14 +49,13 @@ p {
     font-size: 30px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
-    width: 317px;
-    height: 88px;
-    left: 1124px;
-    top: 138px;
+    width: 317px; height: 88px;
+    left:1364px; top:618px;
     font: normal normal bold 30px/44px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
     opacity: 1;
+    position: absolute; 
 }
 .back {
     background: transparent  0% 0% no-repeat padding-box;
@@ -67,6 +66,18 @@ p {
     background: transparent 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+.ecocepage{
+    display: flex;
+    width: 1441px;
+    height: 883px;
+}
+
+.right{
+    position:absolute 50%; 
+    width: 737px; height: 745px;
+    object-position: right;
+}
+
 #ecoce {
     opacity: 1;
     width: 452px;
@@ -84,10 +95,26 @@ p {
     height: 32px;
 }
 
+.ecocelogo {
+    padding-top: 366px;
+    padding-left: 988px;
+    padding-right: 1px;
+    padding-bottom: 392px;
+}
+
 .project_t {
     padding-left: 240px;
     padding-top: 100px;
+    padding-right: 239px;
+    width: 1441px;
 }
+
+.rightimg {
+    left:1228px; top:846px;
+    position:absolute;
+}
+
+
 
 .apple {
     font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
@@ -141,4 +168,64 @@ p {
     background: transparent 
     linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+
+.moadoback {
+    padding-top: 1597px;
+    padding-left: 240px;
+}
+
+.mmate {
+    padding-top: 134px;
+    padding-right: 830px;
+    padding-bottom: 215px;
+}
+
+.moadologo {
+    padding-top: 318px;
+    padding-right: 240px;
+    padding-left: 1228;
+    padding-bottom: 397px;
+
+}
+
+.text {
+    font-weight: 700;
+    font-size: 30px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: right;
+    width: 324px; height: 44px;
+    left:1357px; top: 1597px;
+    font: normal normal bold 30px/44px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+    position: absolute; 
+}
+
+.projectimg {
+    width: 3000px;
+}
+.project1 {
+    padding-top: 50px;
+    width: 228px;
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-left: 0;
+    margin-right: 37.5px;
+}
+.project {
+    padding-top: 50px;
+    width: 228px;
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-left: 37.5px;
+    margin-right: 37.5px;
 }

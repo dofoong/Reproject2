@@ -24,7 +24,11 @@
         }
         .moado {
             padding-top: 250px;
+        }     
+        .project1 {
+            box-shadow: (5, 5, 10, #000000);
         }
+
     </style>
 </head>
 <body>
@@ -35,11 +39,12 @@
 </header>
 <div class="project_t">
     <!-- 에코스 페이지 -->
-    <div id="head" style="width: 141px; height: 84px;">
+    <div class="Ecocepage">
+       <div id="head" style="width: 141px; height: 84px;">
         <p class="bold">에코스</p>
         <p class="medium">ECO-Clean Earth</p>
     </div>
-    <div id> 
+    <div class="left"> 
         <div style="position: relative; top:54px;">
             <img id="back" src="./img/Ecoce_back.png" width="679px" height="592px"></img>
             <div style="position:absolute; left: 229px; top:58px;">
@@ -47,16 +52,13 @@
             </div>
         </div>
     </div>
-    
-    <div id>
-    <div style="position: absolute; left:1364px; top:618px;">
+    <div id="right">
         <p class="bold-r">국내 최초 <br>
            탄소중립 실천인증 플랫폼</p>
-    </div>
         <div style="position:absolute; left:1228px; top:846px;">
-        <img id="ecocelogo" src="./img/Ecoce.png" alt="" width="452px" height="125px">
+            <img id="ecocelogo" src="./img/Ecoce.png" alt="" width="452px" height="125px">
         </div>
-        <div style="position:absolute; left:1502px; top:1003px;">
+            <div style="position:absolute; left:1502px; top:1003px;">
         <p class="eco">ECO-Clean Earth</p>
         </div>
         <div style="position: absolute; left:1273px; top:1175px; width: 188px; height: 57px; background-color: black; margin-right: 30px; border-radius: 69px;">
@@ -74,29 +76,52 @@
                     <p class="apple">App Store에서<br> 다운로드</p>
                     </div>
             </div>
-        </div><br>
+        </div>
+        </div>
     </div>
+
     <!-- 모아두 페이지 -->
-    <div class="moado" style="top: 1383px; width:1920px; height:820px;">
+    <div class="moado" style="top: 1463px; height: 820px;">
     <p class="bold_m">모아두</p>
     <p class="medium_m">moaDo</p>
     <div class="moadopage" style="width:1920px; height:686px;">  <!--backgorund gradation effect needed!!-->
         <p class="text">내 손안의 모바일 회원수첩</p>
-        <div id>
-            <img id="moadoback" src="./img/mmate.png" width="850px" height="471px">
+        <div id="mmate" style="position:absolute;">
+            <img id="moadoback" src="./img/mmate.png" width="850px" height="471px"></img> 
         </div>
-        <div id>
-            <img id="moadofront" src="./img/moado.png" width="680px" height="482px">
+        <div id="moado">
+            <img id="moadofront" src="./img/moado.png" width="680px" height="482px"></img> 
         </div>
-        <div id>
-            <img id="moadologo" src="./img/moado_logo.svg" width="452px" height="105px">
+        <div id="moado_logo" style="position:absolute">
+            <img id="moadologo" src="./img/moado_logo.svg" width="452px" height="105px"></img> 
         </div>
 
     </div>
 </div>
+    <!-- etc 페이지 -->
+    <div class="moado" style="top: 1383px; width:1920px; height:820px;">
+        <p class="bold_m">ETC</p>
+        <p class="medium_m">PROJECTS</p>
+        <div class="projectimg">
+            <a href="#" class="project1">
+                <img src="./img/proj1.png" width="228px" height="350px">
+            </a>
+            <a href="#" class="project">
+                <img src="./img/proj2.png" width="228px" height="350px">
+            </a>
+            <a href="#" class="project">
+                <img src="./img/proj3.png" width="228px" height="350px">
+            </a>
+            <a href="#" class="project">
+                <img src="./img/proj4.png" width="228px" height="350px">
+            </a>
+            <a href="#" class="project">
+                <img src="./img/proj5.png" width="228px" height="350px">
+            </a>
+        </div>
+    </div>
 
-
-</div>  
+</div>
 </body>
 </html>
 
