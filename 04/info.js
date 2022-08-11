@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    $('#info_article_list>div').hide(); //div 모두 숨기고
-    $('#info_article_list>div').slice(0,6).show(); //1번째부터 6번째 까지만 보여줌
+    const el = $('#info_article_list>div')
+    el.hide(); //div 모두 숨기고
+    el.slice(0,6).show(); //1번째부터 6번째 까지만 보여줌
 })
 
 function more(){
