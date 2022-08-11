@@ -2,12 +2,12 @@ footer{
     background-color: #E9E9E9;
 }
 #footer{
-    margin-left: 240px;
-    padding:50px 0 50px 0;
+    margin-left: 12%;
+    padding:3% 0;
 }
 .footer-logo p{
     display:inline-block;
-    margin-left: 20px;
+    margin-left: 2%;
     color: #9E9E9E;
     font-weight: bold;
 }
@@ -16,7 +16,26 @@ footer{
     font-size: 16px;
     line-height: 26px;
     color: #9E9E9E;
+    gap:1%;
 }
 .footer-wrap p{
     width:50%;
+}
+@media screen and (max-width:1280px){
+    #footer{
+        margin-left:9%;
+    }
+}
+@media screen and (max-width:768px){
+    #footer{
+        margin-left:6%;
+        padding:6% 0;
+    }
+    .footer-wrap{
+        flex-direction: column;
+    }
+    .footer-wrap p{
+        width:90%;
+        margin-bottom:0;
+    }
 }
