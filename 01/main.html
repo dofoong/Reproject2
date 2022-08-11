@@ -1,70 +1,441 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-<link rel="stylesheet" href="./main.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<title>Resoft</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+   <link rel="stylesheet" href="./resoft_root.css">
+   <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" href="./main2.css">
+   <link rel="stylesheet" href="./main3.css">
+   <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <title>Resoft</title>
 </head>
+
 <body>
 
-    <header>
-        <img class="slideIMG" src="./resoft/images/slider_1.png" alt="">
-        <nav>
-            <div class="nav">
-                <img class="whitelogo" src="./resoft/images/logo.svg" alt="">
-                <ul>
-                    <li>회사소개</li>
-                    <li>사업현황</li>
-                    <li>정보마당</li>
-                </ul>
-                <img class="hamburg" src="./resoft/images/hamburg.svg" alt="">
-            </div>
-        </nav>
-        <div class="hide-nave">
-            <div class="hide-nav-texts">
-               <div class="hide-nav-con-wrap">
-                  <div class="small-size-nav-wrap">
-                     <ul class="slide-nav-text">
-                        <a href="#"><li>회사소개</li></a>
-                        <a href="#"><li>사업현황</li></a>
-                        <a href="#"><li>정보마당</li></a>
-                     </ul>
-                  </div>
+   <header>
+      <div class="head-slider">
+         <div><img class="slideIMG" src="./resoft/images/slider_1.png" alt=""></div>
+         <div><img class="slideIMG" src="./resoft/images/slider_2.png" alt=""></div>
+         <div><img class="slideIMG" src="./resoft/images/slider_3.png" alt=""></div>
+      </div>
+      <nav>
+         <div class="nav">
+            <img class="whitelogo" src="./resoft/images/logo.svg" alt="">
+            <ul>
+               <li>회사소개</li>
+               <li>사업현황</li>
+               <li>정보마당</li>
+            </ul>
+            <img class="hamburg" src="./resoft/images/hamburg.svg" alt="">
+         </div>
+      </nav>
+      <div class="hide-nave">
+         <div class="hide-nav-texts">
+            <div class="hide-nav-con-wrap">
+               <div class="small-size-nav-wrap">
+                  <ul class="slide-nav-text">
+                     <a href="#">
+                        <li>회사소개</li>
+                     </a>
+                     <a href="#">
+                        <li>사업현황</li>
+                     </a>
+                     <a href="#">
+                        <li>정보마당</li>
+                     </a>
+                  </ul>
+               </div>
                <div class="hide-nav-flex-wrap">
-                 
-                      <ul class="slide-nav-text-1">
-                         <a href="#"><li>REsoft소개</li></a>
-                         <a href="#"><li>연혁</li></a>
-                         <a href="#"><li>조직도</li></a>
-                         <a href="#"><li>특허&인증</li></a>
-                         <a href="#"><li>오시는 길</li></a>
-                      </ul>
-                      <ul class="slide-nav-text-2">
-                         <a href="#"><li>ECOCE</li></a>
-                         <a href="#"><li>moaDo</li></a>
-                         <a href="#"><li>Etc</li></a>
-                      </ul>
-                      <ul class="slide-nav-text-3">
-                         <a href="#"><li>REsoft소식</li></a>
-                      </ul>
-               </div>
+
+                  <ul class="slide-nav-text-1">
+                     <a href="#">
+                        <li>REsoft소개</li>
+                     </a>
+                     <a href="#">
+                        <li>연혁</li>
+                     </a>
+                     <a href="#">
+                        <li>조직도</li>
+                     </a>
+                     <a href="#">
+                        <li>특허&인증</li>
+                     </a>
+                     <a href="#">
+                        <li>오시는 길</li>
+                     </a>
+                  </ul>
+                  <ul class="slide-nav-text-2">
+                     <a href="#">
+                        <li>ECOCE</li>
+                     </a>
+                     <a href="#">
+                        <li>moaDo</li>
+                     </a>
+                     <a href="#">
+                        <li>Etc</li>
+                     </a>
+                  </ul>
+                  <ul class="slide-nav-text-3">
+                     <a href="#">
+                        <li>REsoft소식</li>
+                     </a>
+                  </ul>
                </div>
             </div>
-          </div>
-        <div class="text_wrap">
-            <p id="evo">Evolution <br>With New Software</p>
-            <p id="mob">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse,<br>Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
-        </div>
-        <div class="img_wrap">
-            <img src="./resoft/images/Icon ionic-ios-arrow-round-back.svg" alt="">
-            <img src="./resoft/images/play.svg" alt="">
-            <img src="./resoft/images/Icon ionic-ios-arrow-round-back-1.svg" alt="">
-        </div>
-    </header>
+         </div>
+      </div>
+      <div class="text_wrap">
+         <p id="evo">Evolution <br>With New Software</p>
+         <p id="mob">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse,<br>Responsive WEBsite, Brand
+            Design Launch, ICT Consulting</p>
+      </div>
+      <div class="img_wrap">
+         <!-- <img src="./resoft/images/Icon ionic-ios-arrow-round-back.svg" alt=""> -->
+         <img src="./resoft/images/play.svg" alt="" class="pause">
+         <!-- <img src="./resoft/images/Icon ionic-ios-arrow-round-back-1.svg" alt=""> -->
+      </div>
+   </header>
+   <!-- page2 -->
+   <div class="news_wrap">
+      <div class="news_content_wrap">
+         <div class="news_title">
+            <h1>리소프트의 새로운 소식</h1>
+            <p>RESOFT NEWS</p>
+         </div>
+
+         <ul class="news_item">
+            <li class="news_item_list">
+               <a class="news_item_link" href="#">
+                  <div class="item_img_wrap">
+                     <img class="item_img" src="./resoft/images/사각형 36.png" alt="...">
+                  </div>
+                  <p class="item_para"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elit...</span></p>
+                  <p class="item_date">2022.01.01</p>
+               </a>
+            </li>
+
+            <div id="item_seperator"></div>
+
+            <li class="news_item_list">
+               <a class="news_item_link" href="#">
+                  <div class="item_img_wrap">
+                     <img class="item_img" src="./resoft/images/사각형 36.png" alt="...">
+                  </div>
+                  <p class="item_para"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elit...</span></p>
+                  <p class="item_date">2022.01.01</p>
+               </a>
+            </li>
+
+            <div id="item_seperator"></div>
+
+            <li class="news_item_list">
+               <a class="news_item_link" href="#">
+                  <div class="item_img_wrap">
+                     <img class="item_img" src="./resoft/images/사각형 36.png" alt="...">
+                  </div>
+                  <p class="item_para"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elit...</span></p>
+                  <p class="item_date">2022.01.01</p>
+               </a>
+            </li>
+
+            <div id="item_seperator"></div>
+
+            <li class="news_item_list">
+               <a class="news_item_link" href="#">
+                  <div class="item_img_wrap">
+                     <img class="item_img" src="./resoft/images/사각형 36.png" alt="...">
+                  </div>
+                  <p class="item_para"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elit...</span></p>
+                  <p class="item_date">2022.01.01</p>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <!-- next -->
+   <div class="project-wrap">
+      <div class="project-con-wrap">
+         <div class="pro-con-right">
+            <div class="pro-ecoce">
+               <figure class="pro-ecoce-wrap">
+                  <div class="ecoce-back-img imghover"></div>
+                  <!-- <img src="./img/ecoce-3d-pic.png" alt="에코스3D사진"> -->
+                  <figcaption>
+                     <h4>에코스 ECOCE (ECO-Clean Earth)</h4>
+                     <p>국내 최초<br />
+                        탄소중립 실천인증 플랫폼</p>
+                     <a href="#"></a>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="pro-moado">
+               <figure class="pro-moado-wrap">
+                  <div class="moado-back-img imghover"></div>
+                  <figcaption>
+                     <h4>모아두 (moaDo)</h4>
+                     <p>내 손안의 모바일 회원수첩</p>
+                     <a href="#"></a>
+                  </figcaption>
+               </figure>
+            </div>
+         </div>
+         <div class="pro-con-left">
+            <div class="project-text">
+               <h2>프로젝트</h2>
+               <p class="pro-text-eng">RESOFT PROJECT</p>
+               <p class="pro-text-con">쾌적한 서비스 제공을 위해 사용자 입장에서<br />
+                  생각하고 항상 새로운 도전을 시도합니다.</p>
+            </div>
+            <div class="motion-pic-1">
+               <lottie-player class="ani-player" src="https://assets4.lottiefiles.com/packages/lf20_3rqwsqnj.json"
+                  background="transparent" speed="1" style="max-width: 680px; max-height: 680px;" loop autoplay>
+               </lottie-player>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!DOCTYPE html>
+   <html lang="ko">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+      <link rel="stylesheet" href="./main3.css">
+      <!-- <link rel="stylesheet" href="./resoft_root.css"> -->
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <title>Document</title>
+   </head>
+
+   <body>
+      <div class="service-wrap">
+         <div class="service-con-wrap">
+            <div class="ser-con-left">
+               <div class="service-text">
+                  <h2>서비스</h2>
+                  <p class="ser-text-eng">SERVICE</p>
+                  <p class="ser-text-con">다양한 기술플랫폼을 제공하여 가능성을 열어주고<br />
+                     의미있는 성공으로 인도하는 서비스를 제공합니다.</p>
+               </div>
+               <div class="motion-pic-2">
+                  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_xl25zrrh.json"
+                     background="transparent" speed="1" style="max-width: 680px; max-height: 680px;" loop autoplay>
+                  </lottie-player>
+               </div>
+            </div>
+            <div class="ser-con-right">
+               <div class="ser-app-web-wrap">
+                  <div class="ser-app">
+                     <figure class="ser-develop-wrap">
+                        <div class="app-develop-img imghover">
+                           <h4>앱(APP) 개발</h4>
+                           <p>ANDROID / IOS</p>
+                        </div>
+                        <figcaption>
+                           <p>Android 앱 개발<br />
+                              iOS 앱 개발<br />
+                              플랫폼 기획 및 설계</p>
+                           <a href="#"></a>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="ser-web">
+                     <figure class="ser-web-wrap">
+                        <div class="web-back-img imghover">
+                           <h4>웹(WEB) 구축</h4>
+                           <p>RESPONSIVE WEB</p>
+                        </div>
+                        <figcaption>
+                           <p>반응형 홈페이지 구축<br />
+                              데이터베이스 구축<br />
+                              빅데이터 구축</p>
+                           <a href="#"></a>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="ser-app-web-wrap">
+                  <div class="ser-ai">
+                     <figure class="ser-ai-wrap">
+                        <div class="app-ai-img imghover">
+                           <h4>AI 기반 기술개발</h4>
+                           <p>AI BIGDATA</p>
+                        </div>
+                        <figcaption>
+                           <p>AI 대화형 챗봇<br />
+                              자동 객체인식 검출기<br />
+                              딥러닝 학습 모델</p>
+                           <a href="#"></a>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="ser-xr">
+                     <figure class="ser-xr-wrap">
+                        <div class="app-xr-img imghover">
+                           <h4>XR 콘텐츠 구현</h4>
+                           <p>METAVERSE</p>
+                        </div>
+                        <figcaption>
+                           <p>실감형 플랫폼 구축<br />
+                              가상현실 콘텐츠 제작<br />
+                              게임콘텐츠 제작</p>
+                           <a href="#"></a>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- reference -->
+      <div class="refer_wrap">
+         <div class="refer_title_wrap">
+            <h1 class="refer_title">레퍼런스</h1>
+            <p class="refer_para">REFERENCE</p>
+         </div>
+
+         <div class="refer_img_wrap">
+            <ul class="refer_list">
+               <li class="refer_img_list">
+                  <img id="refer_img_1" src="./resoft/images/01_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_2" src="./resoft/images/02_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_3" src="./resoft/images/03_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_4" src="./resoft/images/04_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_5" src="./resoft/images/05_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_6" src="./resoft/images/06_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_7" src="./resoft/images/07_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_8" src="./resoft/images/08_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_9" src="./resoft/images/09_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_10" src="./resoft/images/10_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_11" src="./resoft/images/11_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_12" src="./resoft/images/12_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_13" src="./resoft/images/13_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_14" src="./resoft/images/14_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_15" src="./resoft/images/15_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_16" src="./resoft/images/16_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_17" src="./resoft/images/17_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_18" src="./resoft/images/18_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_19" src="./resoft/images/19_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_20" src="./resoft/images/20_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_21" src="./resoft/images/21_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_22" src="./resoft/images/22_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_23" src="./resoft/images/23_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_24" src="./resoft/images/24_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_25" src="./resoft/images/25_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_26" src="./resoft/images/26__refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_27" src="./resoft/images/27_refe.png" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_28" src="./resoft/images/28_refe.svg" alt="">
+               </li>
+
+               <li class="refer_img_list">
+                  <img id="refer_img_29" src="./resoft/images/29_refe.svg" alt="">
+               </li>
+
+               <li id="refer_empty">
+
+               </li>
+            </ul>
+         </div>
+      </div>
+   </body>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   </html>
 </body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./slider.js"></script>
 <script src="main.js"></script>
-</html>     
+
+</html>
