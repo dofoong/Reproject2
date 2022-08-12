@@ -231,7 +231,6 @@ footer{
 @media screen and (max-width: 1280px) {
     * {
         max-width: 1280px;
-        width: 100%;
     }
     .info_main {
         max-width: 1000px;
@@ -243,9 +242,12 @@ footer{
     .infonews_list {
         max-width: 700px;
     }
-    .infonews_con_img {
-        width: 700px;
+    .infonews_contents .infonews_con_img img {
+        max-width: 700px;
         height: 370px;
+    }
+    .infonews_con_text {
+        margin-top: -200px;
     }
     .infonews_btn_icon {
         width: 30px;
@@ -260,12 +262,21 @@ footer{
     .infonews_btn_text {
         display: none;
     }
+    footer {
+        width: 1280px;
+        height: 250px;
+    }
+    #footer{
+        margin-left:9%;
+    }
+    .footer-wrap p:first-child {
+        margin-right: 60px;
+    }
 }
 /********** 모바일 화면 **********/
 @media screen and (max-width: 768px) {
     * {
         max-width: 768px;
-        width: 100%;
     }
     .info_main {
         max-width: 704px;
@@ -278,5 +289,23 @@ footer{
     }
     .infonews_list {
         margin: 0 auto;
+    }
+    footer {
+        width: 768px;
+        height: 330px;
+    }
+    #footer{
+        margin-left:6%;
+        padding:6% 0;
+    }
+    .footer-wrap{
+        flex-direction: column;
+    }
+    .footer-wrap p{
+        width:90%;
+        margin-bottom:0;
+    }
+    .footer-wrap p:last-child {
+        margin-top: 30px;
     }
 }
