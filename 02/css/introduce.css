@@ -58,7 +58,8 @@ section{
     color: rgba(255, 255, 255, 1);
 }
 .intro-title{
-    line-height: 0; 
+  margin-left:5%;
+  line-height: 0; 
 }
 .intro-title p:first-child{
     text-align: left;
@@ -129,7 +130,7 @@ section{
   }
   #history-index{
     position:relative;
-    top: -16.5vh;
+    top: -15em;
     left: 20%;
   }
   /* Timeline */
@@ -144,7 +145,7 @@ section{
     position: relative;
     line-height: 1.4em;
     font-size: 1.03em;
-    padding: 50px 0 0 50px;
+    padding-left: 50px;
     list-style: none;
     text-align: left;
     font-weight: 100;
@@ -154,6 +155,10 @@ section{
     padding-bottom: 4vh;
     margin-bottom: 5vh;
     position: relative;
+  }
+  .timeline .event:first-of-type{
+    padding-bottom:4vh;
+    margin-bottom: 7.5em;
   }
   .timeline .event:last-of-type {
     padding-bottom: 0;
@@ -177,13 +182,13 @@ section{
   }
   .timeline .event:after {
     box-shadow: 0 0 0 4px #4298c3;
-    left: -57.85px;
+    left: -59.85px;
     background: #313534;
     border-radius: 50%;
-    height: 0.8em;
-    width: 0.8em;
+    height: 0.9em;
+    width: 0.9em;
     content: "";
-    top: 5px;
+    top: 4px;
   }
  /*조직도*/
  #organiz{
