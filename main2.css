@@ -246,3 +246,163 @@
  .pro-moado-wrap figcaption {
     padding-top: 285px;
  }
+ @media screen and (min-width:769px) and (max-width:1280px){
+
+   .news_title{
+      margin: 0 auto;
+      margin-bottom: 50px;
+   }
+   .news_title h1{
+      display: block;
+      margin: 0 auto;
+   }
+   .news_title p{
+      display: block;
+      margin: 0 auto;
+   }
+   .news_content_wrap{
+      align-items: center;
+      justify-content: center;
+   }
+   .news_item{
+      display: flex;
+      width: 700px;
+      height: 650px;
+      flex-wrap: wrap;
+      margin: 0;
+      justify-content: space-evenly;
+   }
+}
+
+@media screen and (min-width:941px) and (max-width:1024px) {
+
+   .project-wrap {
+      width: 100%;
+      height: 1911px;
+   }
+
+   .project-con-wrap {
+      max-width: fit-content;
+      flex-direction: column-reverse;
+   }
+
+   .pro-con-right {
+      margin: -2px 20% 0 15%;
+   }
+
+   .project-text {
+      text-align: center;
+   }
+
+   .ani-player {
+      padding: 0 10%;
+   }
+
+   .ecoce-back-img,
+   .moado-back-img {
+      width: 100%;
+   }
+
+   .motion-pic-1{
+      padding: 0 0 0 11%;
+   }
+
+   .service-wrap {
+      width: 100%;
+      height: 2200px;
+      background: #F2F6FC;
+      top: 3461px;
+   }
+
+   .service-con-wrap {
+      max-width: fit-content;
+      flex-direction: column;
+   }
+
+   .service-text {
+      text-align: center;
+   }
+
+   .ser-con-left,
+   .ser-con-right {
+      width: 100%;
+   }
+
+}
+@media (max-width:940px) {
+
+   .project-wrap {
+      width: 100%;
+      height: 1911px;
+   }
+
+   .project-con-wrap {
+      max-width: fit-content;
+      flex-direction: column-reverse;
+   }
+
+   .pro-con-right {
+      margin: -2px 20% 0 15%;
+   }
+
+   .project-text {
+      text-align: center;
+   }
+
+   .ani-player {
+      padding: 0 10%;
+   }
+
+   .ecoce-back-img,
+   .moado-back-img {
+      width: 100%;
+   }
+
+   .service-wrap {
+      width: 100%;
+      height: 2200px;
+      background: #F2F6FC;
+      top: 3461px;
+   }
+
+   .service-con-wrap {
+      max-width: fit-content;
+      flex-direction: column;
+   }
+
+   .service-text {
+      text-align: center;
+   }
+
+   .ser-con-left,
+   .ser-con-right {
+      width: 100%;
+   }
+}
+
+@media (max-width:767px) {
+
+   .pro-con-right {
+      max-width: 475px;
+   }
+
+   .project-text {
+      text-align: right;
+   }
+
+   .pro-con-left{
+      padding-right: 10%;
+   }
+   .motion-pic-1{
+      padding: 0 0 0 11%;
+   }
+
+   .service-text {
+      text-align: left;
+   }
+
+   .service-con-wrap{
+      padding: 0 10%;
+   }
+
+}
