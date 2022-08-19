@@ -26,10 +26,9 @@
         .moado {
             padding-top: 250px;
         }     
-        .project1 {
-            box-shadow: (5, 5, 10, #000000);
+        .black {
+            margin: 20px;
         }
-
     </style>
 </head>
 <body>
@@ -62,23 +61,17 @@
             <div style="position:absolute; left:1502px; top:1003px;">
         <p class="eco">ECO-Clean Earth</p>
         </div>
-        <div style="position: absolute; left:1273px; top:1175px; width: 188px; height: 57px; background-color: black; margin-right: 30px; border-radius: 69px;">
-            <div style="display: inline-block;vertical-align: top;">
-            <img id="appimg" src="./img/app.png" width="31px" height="35px"></img>       
-                <div style="display: inline-block; top: 1181px; left: 1336px;">
-                    <p class="app">Play Store에서<br> 다운로드</p>
-                </div>
-            </div>
         </div>
-        <div style="position: absolute; left:1491px; top:1175px; width: 189px; height: 57px; background-color: black; border-radius: 69px;">
-            <div style="display: inline-block;">
-                <img id="appleimg" src="./img/apple.png" width="26.68px" height="35.22px"></img>       
-                    <div style="display: inline-block; top: 1181px; left: 1554px;">
-                    <p class="apple">App Store에서<br> 다운로드</p>
-                    </div>
-            </div>
-        </div>
-        </div>
+        <div class="button_wrap">
+            <a href="#" class="button-round-black">
+              <img id="black" src="./img/app.png" alt="google store logo">
+              <p style="padding-left: 10px;">Play Store에서<br>다운로드</p>
+            </a>
+            <a href="#" class="button-round-black">
+              <img id="black" src="./img/apple.png" alt="appstore logo">
+              <p style="padding-left: 10px;">App Store에서<br>다운로드</p>
+            </a>
+          </div>
     </div>
 
     <!-- 모아두 페이지 -->
@@ -151,7 +144,3 @@
 </body>
 </html>
 
-<!-- 0804 강사님 코맨트
-html에는 폰트 및 내용만 포함하도록 하고
-모든 디자인이나 포지션설정은 css 파일에서 설정하기
-최대한 오류가 나는거를 줄이고 팀프로젝트중 손쉽게 수정하고 눈으로 보기 편하다. -->
