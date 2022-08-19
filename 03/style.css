@@ -97,7 +97,7 @@ p {
 
 .ecocelogo {
     padding-top: 366px;
-    padding-left: 988px;
+    padding-left: 1228px;
     padding-right: 1px;
     padding-bottom: 392px;
 }
@@ -114,37 +114,41 @@ p {
     position:absolute;
 }
 
-
-
-.apple {
-    font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
-    font: normal normal medium 14px/22px Noto Sans KR;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+.button_wrap a:first-child {
+    margin-bottom: 10px;
+}
+.button_wrap a {
+    width: 189px;
+    height: 57px;
+    margin-left: 30px;
 }
 
-.app {
-    font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
-    font: normal normal medium 14px/22px Noto Sans KR;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+.button_wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    margin-bottom: 131px;
+    vertical-align: baseline;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding-left: 1025px;
 }
-
-.appimg {
-    padding-top: 1106px;
-    padding-left: 1293px;
-    padding-right: 596px;
-}
-
-.appleimg {
-    left: 1510.01px; 
-    top:1185.75px;
+.button-round-black {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 57px;
+    padding: 0px 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-decoration-line: none;
 }
 
 .bold_m {
@@ -206,9 +210,10 @@ p {
 
 .projectimg {
     width: 3000px;
+    padding-top: 50px;
 }
 .project1 {
-    padding-top: 50px;
+    box-shadow: 0px 0px 10px #000000;
     width: 228px;
     text-align: center;
     display: block;
@@ -219,7 +224,7 @@ p {
     margin-right: 37.5px;
 }
 .project {
-    padding-top: 50px;
+    box-shadow: 0px 0px 10px #000000;
     width: 228px;
     text-align: center;
     display: block;
