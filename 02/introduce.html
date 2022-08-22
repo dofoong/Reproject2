@@ -4,21 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> -->
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/introduce.css">
     <link rel="stylesheet" href="./css/footer.css">
-    
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <title>회사소개</title>
     <style>
-     /* div{background-color: darkgray;} */
     </style>
 </head>
 <body>
+ <!-- header -->
+ <header class="header">
+
+  <div class="navi">
+      <a class="img_wrap" href="../index.html">
+          <img src="./img/logo.svg" alt="메인로고">
+      </a>
+      <div id="wrapper">
+          <nav>                
+              <ul id="wrap_text">
+                  <li class="wrap_tx1"><a class="wrap_tx" href="./introduce.html">회사소개</a>
+                      <ul class="nvi close">
+                          <li class="wrap_tx2"><a href="../02/introduce.html">회사소개</a></li>
+                          <li><a href="./introduce.html#in-about">Resoft소개</a></li>
+                              <li><a href="./introduce.html#in-time">연혁</a></li>
+                              <li><a href="./introduce.html#in-org3">조직도</a></li>
+                              <li><a href="./introduce.html#in-certi">특허&인증</a></li>
+                              <li><a href="./introduce.html#in-map">오시는 길</a></li>
+                      </ul>
+                  </li>
+
+                  <li><a class="wrap_tx" href="../03/index.html">사업현황</a>
+                      <ul class="nvi close">
+                          <li class="wrap_tx2"><a href="../03/index.html">사업현황</a></li>
+                          <li><a href="../03/index.html#Ecocepage">ECOCE</a></li>
+                          <li><a href="../03/index.html#moado">MoaDo</a></li>
+                          <li><a href="../03/index.html#moado">Etc</a></li>
+                      </ul>
+                  </li>
+
+                  <li><a class="wrap_tx" href="../04/info.html">정보마당</a>
+                      <ul class="nvi close">
+                          <li class="wrap_tx2"><a href="../04/info.html">정보마당</a></li>
+                          <li><a href="../04/info.html#info_article_list">Resoft소식</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+          <div class="nvi close"></div>
+      </div>
+  </div>    
+      <a class="btn">
+          <img src="./img/hamburg.svg" alt="">
+      </a>
+  </header>
+  <!-- 내용 -->
   <div id="container">
     <div id="header">
        <p>회사소개</p>
     </div>
     <!-- resoft 소개 -->
-    <section>
+    <section id="in-about" data-scroll >
         <div class="section">
         <div class="intro-title">
           <p>REsoft소개</p>
@@ -50,7 +99,7 @@
     </div>
     </section>
     <!-- 연혁 -->
-    <section>
+    <section id="in-time" data-scroll>
         <div class="section">
         <div id="history-resoft">
         <div class="intro-title">
@@ -94,7 +143,7 @@
         </div>
     </section>
     <!-- 조직도 -->
-    <section>
+    <section data-scroll id="in-org">
       <!-- <div class="section">
         <div class="intro-title">
           <p>조직도</p>
@@ -111,7 +160,7 @@
     </details>
     </section>
     <!-- 특허인증 -->
-    <section>
+    <section id="in-certi" data-scroll>
     <div class="section">
     <div class="intro-title">
         <p>특허인증</p>
@@ -132,7 +181,7 @@
     </section>
         
 <!-- 오시는길 -->
-    <section>
+    <section id="in-map" data-scroll>
     <div class="section">
       <div class="intro-title">
       <p>오시는 길</p>
@@ -159,7 +208,6 @@
               <img src="./img/footer-logo.svg" alt="footer-logo"><p>© RESOFT CO.LTD. All Rights Reserved.</p>  
           </div>
           <div class="footer-wrap">
-              <!-- <p class="footer-add">© RESOFT CO.LTD. All Rights Reserved.</p>   -->
               <p>
                   <span>상호 : (주)리소프트</span>
                   <br>
@@ -181,9 +229,43 @@
 </div>
   <script type="text/javascript" 
   src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ac540a5e75f65b1bdd006f2e7c030b96"></script> 
-
-  
+  <!-- 텍스트 애니메이션 -->
+  <script>
+    ScrollOut({
+      onShown: (element) => {
+        new TypeIt(element.querySelector('.intro-title'), {
+          startDelay: 500,
+          cursor: false,
+        })
+          .pause(1000)
+          .go();
+      },
+      once: true,
+    });
+  </script>
+<script>
+  // 네비게이션바 추가메뉴
+  $(document).ready(function(){
+            const $nvi = $('.nvi');
+            const $btn = $('.btn');
+            $btn .click(function () {
+                if($nvi.hasClass('more'))
+                    $nvi.addClass('magictime tinUpOut');
+                else if($nvi.hasClass('close'))
+                    $nvi.removeClass('magictime tinUpOut');
+                });
+            $btn .click(function(){
+                if($nvi.hasClass('close')){
+                    $nvi.addClass('magictime tinUpIn');
+                    $nvi.addClass('more').removeClass('close');
+                }else if($nvi.hasClass('more')){
+                    setTimeout(function() { $nvi.addClass('close').removeClass('more');}, 1000);
+                }
+            });           
+        });
+</script>   
    <!-- map.js 적용 -->
-<script src="./js/map.js"></script> 
+<script src="./js/map.js"></script>
+
 </body>
 </html>

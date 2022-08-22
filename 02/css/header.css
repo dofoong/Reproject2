@@ -1,0 +1,173 @@
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* header */
+.header{
+    width: 100%;
+    position: relative;
+}
+.navi{
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+}
+#wrap_text {
+    position: fixed;
+    text-align: end;
+    right: 21%;
+    font-weight: 700;
+    margin:0.5em;
+}
+#wrap_text a:hover{
+    color: #184B9F;
+}
+#wrapper>nav>#wrap_text>.wrap_tx1>.wrap_tx{
+    color: #184B9F;
+}
+.wrap_tx1::after {
+    position: absolute; 
+    content:""; 
+    display: block; 
+    border-bottom: 6px solid #184B9F;
+    border-radius: 50px; 
+    bottom: 15%;
+    left: 22%; 
+    width: 57%;
+}
+.wrap_tx::after {
+    position: absolute; 
+    content:""; 
+    display: block; 
+    border-bottom: 6px solid #184B9F;
+    border-radius: 50px; 
+    transition: width 500ms ease-in-out; 
+    bottom: 15%;
+    left: 22%; 
+    width: 0;
+}
+.wrap_tx:hover::after {
+    width: 57%;
+}
+#wrapper {
+    position: relative;
+    left: 0;
+    top: 0;
+    /* padding: 10px 232px 5px; */
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    z-index: 10;
+    background-color: #FFFFFF;
+    
+}
+
+.btn{
+    cursor: pointer;
+}
+header #wrapper nav > ul > li > a {
+    display: block;
+    position: relative;
+    width: 130px;
+    font-size: 20px;
+    color: black;
+    line-height: 63px;
+    top: 0px;
+    z-index: 10;
+    text-align: center;
+    
+}
+
+#wrapper > nav + div {
+    position: absolute;
+    left: 0;
+    top: 81px;
+    width: 100%;
+    height: 200px;
+    background: rgba(24, 75, 159, .7);
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+header #wrapper nav > ul >li {
+    display: inline-block;
+    position: relative;
+}
+
+header #wrapper nav > ul ul li {
+    line-height: 25px;
+    padding-left: 0px;
+    width: 101px;
+}
+
+header #wrapper nav > ul ul a {
+    font-size: 20px;
+    color: white;
+    z-index: 10;
+}
+
+header #wrapper nav > ul ul {
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    height: 230px;
+    transition: all 0.5s;
+    padding-left: 26px;
+}
+header #wrapper nav > ul ul>.wrap_tx2 a{
+    font-size: 20px;
+    color: #ffffff;
+}
+header #wrapper nav > ul ul> .wrap_tx2 {
+    line-height:25px ;
+    padding-bottom: 15px;
+}
+.wrap_tx2 {
+    opacity: 0;
+    display: none;
+}
+.img_wrap img{
+    position: fixed;
+    width: 133px;
+    height: 30px;
+}
+
+header >a {
+    position: fixed;
+    display: flex;
+    right: 15%;
+    top: 25px;
+    width: 50px;
+    z-index: 100;
+}
+.wrap_tx{
+    position: absolute;
+}
+header .img_wrap {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    z-index: 100;
+    margin-left: 17.5%;
+    height: 30px;
+}
+.close{
+    opacity: 0; 
+    display: none;
+}
+.more{
+    opacity: 1;
+}

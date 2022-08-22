@@ -1,21 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+html,
 body{
   margin:0;
   padding:0;
-  font-family: 'Noto Sans KR', sans-serif; 
+  font-family: 'Noto Sans KR', sans-serif;
 }
+html{
+  min-height:100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
 #container{
   width:100%;
-  align-items: center;
-  overflow-x: hidden;
   position:relative;
   display: block;
+  align-items: center;
+  overflow-x: hidden;  
 }
 ul li{
     list-style: none;
 }
 details{
   list-style-type: none;
+}
+#in-org:hover{
+  color: #c4cedd;
 }
 summary {
   outline: none;
@@ -37,6 +53,24 @@ section{
 }
 .section{
   width:90%;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+[data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(6rem) scale(0.93);
+  transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll='in'] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+[data-scroll='out'] {
+  opacity: 0;
 }
 #header{ 
   position:relative;
@@ -49,6 +83,7 @@ section{
   flex-wrap: nowrap;
   justify-content:center;
   align-items: center; 
+  margin-top:80px;
 }
 
 #header p{
@@ -58,14 +93,12 @@ section{
     color: rgba(255, 255, 255, 1);
 }
 .intro-title{
-  margin-left:5%;
   line-height: 0; 
 }
 .intro-title p:first-child{
     text-align: left;
     font: normal normal bold 40px/58px 'Noto Sans KR';
     letter-spacing: 0px;
-    color: rgba(30, 30, 30, 1);
     margin:0;
     padding:0;
 }
@@ -302,10 +335,10 @@ section{
     padding-left:3%;
   }
   /* 조직도 */
-  #organiz{
+  /* #organiz{
     background-size: 70%;
     padding: 25vh 0;
-  }
+  } */
   /* 특허인증 */
   .grid-image img {
     width:calc(50% - 9vw);
