@@ -150,45 +150,16 @@ p {
     font-weight: 500;
     text-decoration-line: none;
 }
-.button_wrap1 a:first-child {
-    margin-bottom: 10px;
-}
-.button_wrap1 a {
-    width: 153px;
-    height: 57px;
-    margin-left: 30px;
-}
-.button_wrap1 {
-    display: flex;
-    justify-content: flex-end;
-    width: fit-content;
-    margin-bottom: 131px;
-    vertical-align: baseline;
-    font: inherit;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    padding-left: 1025px;
-}
-.button-round-black2 {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    height: 57px;
-    width: 153px;
-    padding: 0px 20px;
-    border-radius: 50px;
-    background-color: black;
-    color: white;
-    line-height: 22px;
-    font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
-    text-decoration-line: none;
-    margin-top: 0px;
-    left: 1527px;
-    width: 153px;
-    height: 57px;}
+.bold-moado {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    top: 134px;
+    padding-right: 239px;
+    position: absolute; 
+  }
 
 .bold_m {
     font-weight: 700;
@@ -206,32 +177,61 @@ p {
     letter-spacing: 0px;
     opacity: 1;
 }
-
-.moado{
-    padding-left: 240px;
-}
-.moadopage {
-    background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;   
-    width: 1920px;
-    height: 686px;
-    padding-top: 134px;
-    left: 0px;
-}
-#mmate {
+#section_moado {
+    padding-top: 100px;
+    width: auto;
+    height: auto;
     top: 1597px;
-    left: 240px;
-}
-#moado_f {
-    padding-top: 0px;
-    padding-left: 700px;
-}
+    overflow: auto;
+    background: linear-gradient(45deg, #339BE133, transparent 15%),
+                linear-gradient(340deg, #E4CDE8, transparent 45%);
+  }
+  #section_moado .container {
+    position: relative;
+    /* height: 686px; */
+  }
+  .moado_content_wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .image_moado_app {
+    /* max-width: 850px;
+    width: 100%; */
+    max-width: 100%;
+    margin-bottom: 15%;
+    padding-top: 50px;
+    padding-left: 240px;
+  }
+  .image_use_moado {
+    /* 왼쪽에서 460px, 오른쪽에서 300px */
+    position: absolute;
+    left: 56%;
+    bottom: 0;
+    width: 100%;
+    max-width: 680px;
+    transform: translate(-50%, 0);
+  }
+  .moado_content_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .moado_content_right .logo_moado{
+    max-width: 100%;
+    margin-top: 140px;
+    padding-top: 184px;
+    padding-right: 240px;
+  }
 
-#moado_logo {
-    left: 1228px;
-    top: 1781px;
-}
-
+  .button-moado {
+    margin-top: 140px;
+    margin-bottom: 200px;
+    margin-right: 240px;
+  }
+  .button-moado p {
+    padding: 0 10px;
+  }  
 .text {
     font-weight: 700;
     font-size: 30px;
