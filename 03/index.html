@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Resoft</title>
     <style>
         *{margin: 0px; padding: 0px;}
@@ -32,15 +34,66 @@
     </style>
 </head>
 <body>
-<header>
-    <div id="header" style="top:80px; left:0px; width: 1920px; height: 300px;">
-        <span class="span">사업현황</span>
+    <header>
+        <div class="header-con-wrap">
+          <div class="logo"><a href="#"><img src="./img/nav/CI_color.svg" alt=""></a></div>
+             <nav>
+                <ul class="nav-text">
+                   <a href="#"><li>회사소개</li>
+                      <div class="underline under-1"></div>
+                   </a>
+                   <a href="#"><li>사업현황</li>
+                      <div class="underline under-2"></div>
+                   </a>
+                   
+                   <a href="#"><li>정보마당</li>
+                      <div class="underline under-3"></div>
+                   </a>
+                </ul>
+             </nav>
+             <div class="hamburger-menu"></div>
+        </div>
+    
+        <div class="hide-nave">
+          <div class="hide-nav-texts">
+             <div class="hide-nav-con-wrap">
+                <div class="small-size-nav-wrap">
+                   <ul class="slide-nav-text">
+                      <a href="#"><li>회사소개</li></a>
+                      <a href="#"><li>사업현황</li></a>
+                      <a href="#"><li>정보마당</li></a>
+                   </ul>
+                </div>
+             <div class="hide-nav-flex-wrap">
+               
+                    <ul class="slide-nav-text-1">
+                       <a href="#"><li>REsoft소개</li></a>
+                       <a href="#"><li>연혁</li></a>
+                       <a href="#"><li>조직도</li></a>
+                       <a href="#"><li>특허&인증</li></a>
+                       <a href="#"><li>오시는 길</li></a>
+                    </ul>
+                    <ul class="slide-nav-text-2">
+                       <a href="#"><li>ECOCE</li></a>
+                       <a href="#"><li>moaDo</li></a>
+                       <a href="#"><li>Etc</li></a>
+                    </ul>
+                    <ul class="slide-nav-text-3">
+                       <a href="#"><li>REsoft소식</li></a>
+                    </ul>
+             </div>
+             </div>
+          </div>
+        </div>
+       </header>
+    
+    <div id="header1" style="top:80px; left:0px; width: 1920px; height: 300px;">
+    <span class="span">사업현황</span>
     </div>       
-</header>
 <div class="project_t">
     <!-- 에코스 페이지 -->
     <div class="Ecocepage">
-       <div id="head" style="width: 141px; height: 84px;">
+       <div id="head" style="height: 84px;">
         <p class="bold">에코스</p>
         <p class="medium">ECO-Clean Earth</p>
     </div>
@@ -151,5 +204,6 @@
     </div>
 </footer>
 </body>
+<script src="./js/index.js"></script>
 </html>
 
